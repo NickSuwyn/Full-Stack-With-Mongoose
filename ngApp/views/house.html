@@ -1,0 +1,10 @@
+<div class="well">
+  {{controller.house.name}}
+  <hr>
+  <div class="well" ng-repeat="room in controller.house.rooms">
+    Name: {{room.name}} <br />
+    Area: {{room.area}} sqft
+  </div>
+  <button class="btn btn-default" ng-click="controller.updateHouse()">Edit</button>
+  <button class="btn btn-danger" ng-click="controller.deleteHouse()">Delete</button>
+</div>

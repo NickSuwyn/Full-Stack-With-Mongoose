@@ -36,4 +36,10 @@ router.put('/:id', (req, res) => {
     .catch((err) => res.json(err));
 });
 
+router.delete('/:id', (req, res) => {
+  House.remove({_id: req.params.id})
+    .then((house) => res.json(house))
+    .catch((err) => res.json(err));
+});
+
 export default router;

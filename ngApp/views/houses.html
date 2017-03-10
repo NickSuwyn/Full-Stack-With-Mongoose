@@ -1,7 +1,6 @@
-<div class="well" ng-repeat="house in controller.houses">
-  Name: {{house.name}}
-  <div class="well" ng-repeat="room in house.rooms">
-    Name: {{room.name}} <br />
-    Area: {{room.area}} sqft
-  </div>
+<button ng-click="controller.createNewHouse()">New House</button>
+<hr>
+<h5>Click a house to view house details</h5>
+<div class="well" ng-repeat="house in controller.houses" ng-click="controller.getHouse(house._id)">
+  {{house.name}}
 </div>

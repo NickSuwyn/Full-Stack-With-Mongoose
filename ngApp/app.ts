@@ -25,6 +25,24 @@ namespace database {
               controller: database.Controllers.HousesController,
               controllerAs: 'controller'
             })
+            .state('house', {
+              url: '/house/:id',
+              templateUrl: '/ngApp/views/house.html',
+              controller: database.Controllers.HouseController,
+              controllerAs: 'controller'
+            })
+            .state('newHouse', {
+              url: '/newHouse',
+              templateUrl: '/ngApp/views/newHouse.html',
+              controller: database.Controllers.NewHouseController,
+              controllerAs: 'controller'
+            })
+            .state('updateHouse', {
+              url: '/updateHouse/:id',
+              templateUrl: '/ngApp/views/updateHouse.html',
+              controller: database.Controllers.UpdateHouseController,
+              controllerAs: 'controller'
+            })
             .state('notFound', {
                 url: '/notFound',
                 templateUrl: '/ngApp/views/notFound.html'
