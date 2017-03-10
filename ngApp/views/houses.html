@@ -1,0 +1,7 @@
+<div class="well" ng-repeat="house in controller.houses">
+  Name: {{house.name}}
+  <div class="well" ng-repeat="room in house.rooms">
+    Name: {{room.name}} <br />
+    Area: {{room.area}} sqft
+  </div>
+</div>
